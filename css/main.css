@@ -33,7 +33,7 @@ body {
 	margin-top: 5px;
 }
 .gallery {
-	width: 60vw;
+	width: 30vw;
 	column-width: auto;
 	gap: var(--gap);
 	transform: scale(8.2);
