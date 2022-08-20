@@ -34,7 +34,7 @@ body {
 }
 .gallery {
 	width: 60vw;
-	column-width: 2em;
+	column-width: auto;
 	gap: var(--gap);
 	transform: scale(8.2);
 	will-change: transform;
