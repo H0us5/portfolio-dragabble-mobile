@@ -6,7 +6,7 @@
 :root {
 	--gap: .5em;
 	--index: calc(1vw + 1vh);
-	--color--dark: #000;
+	--color-dark: #000;
 }
 body {
 	overflow: hidden;
@@ -28,13 +28,13 @@ body {
 }
 .header span {
 	display: block;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Helvetica, sans-serif;
 	font-size: calc(var(--index) * .75);
 	margin-top: 5px;
 }
 .gallery {
 	width: 30vw;
-	column-width: 4em;
+	column-width: 2em;
 	gap: var(--gap);
 	transform: scale(8.2);
 	will-change: transform;
@@ -46,13 +46,12 @@ body {
 	will-change: transform;
 	transition: .3s;
 }
-.gallery__item:hover, .gallery__item:active {
+.gallery__item:hover {
 	transform: scale(1.03);
 }
 .gallery__item img {
 	width: 100%;
 	display: block;
-
 }
 .loaded .gallery {
 	opacity: 1;
@@ -61,13 +60,14 @@ body {
 	opacity: 0;
 }
 
-/* Dark Mode */
+/* DARK MODE OS */
 
-@media (prefers-color-sheme: dark) {
+@media (prefers-color-scheme: dark) {
 	body {
-		background-color: var(--color--dark);
+		background-color: var(--color-dark);
 	}
 	.header {
 		filter: invert(100%);
 	}
 }
+
