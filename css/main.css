@@ -46,7 +46,7 @@ body {
 	will-change: transform;
 	transition: .3s;
 }
-.gallery__item:hover {
+.gallery__item:hover, .gallery__item:active {
 	transform: scale(1.03);
 }
 .gallery__item img {
